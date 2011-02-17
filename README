@@ -1,0 +1,18 @@
+On one of my projects I have the need to communicate with the API provided by
+CPanel and WHM:
+http://docs.cpanel.net/twiki/bin/view/AllDocumentation/AutomationIntegration/XmlApi
+
+I found an existing module for this on CPAN:
+http://search.cpan.org/perldoc?API::CPanel
+
+The problem with this module is that it uses XML to communicate with CPanel and
+I rather use the JSON API, for this reason I created my own interpretation of the
+module but using JSON.
+
+The module is highly incomplete right now, and altough I'm using it in production
+mode at the moment without a problem, I can't be sure that will be true for
+everyone.
+
+Perhaps the first problem I have is the name of the module, at the moment of
+creation it didn't occur to me to name it in another way but surely I will rename
+it when it's ready for CPAN.
